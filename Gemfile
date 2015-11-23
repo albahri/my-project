@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 # group :assets do
 #   gem 'twitter-bootstrap-rails'
 # end
+
+gem 'foundation-rails'
+
 gem 'gmaps4rails'
 gem 'geocoder'
 gem 'youtube_it'

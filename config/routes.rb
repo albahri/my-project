@@ -20,6 +20,7 @@ match '/auth/:provider/callback' => 'sessions#create', via: :get
   # get "log_in" =>"sessions#new", :as =>"log_in"
   # get "sign_up" => "users#new", :as => "register"
   root to: "posts#index"
+  
   # resources :users
   # resources :sessions
 end
