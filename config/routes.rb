@@ -7,8 +7,9 @@ Rails.application.routes.draw do
   get 'sampleform/new', as: 'new'
 
   devise_for :users
+  get 'pages/contactus', as: 'contactus'
   get 'pages/account'
-
+  get 'pages/aboutus', as: 'aboutus'
   get 'pages/youtube', as: 'youtube'
   get 'pages/twitter', as: 'twitter'
 

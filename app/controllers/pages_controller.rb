@@ -7,4 +7,7 @@ class PagesController < ApplicationController
 
   def twitter 
   end
+
+  def aboutus 
+  end
 end
