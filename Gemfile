@@ -72,6 +72,3 @@ end
 
 gem 'mocha', group: :test
 
-group :production do
-        gem 'pg'
-end
