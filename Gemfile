@@ -4,6 +4,8 @@ source 'https://rubygems.org'
 #   gem 'twitter-bootstrap-rails'
 # end
 
+gem 'less-rails-bootstrap'
+
 gem 'foundation-rails'
 
 gem 'gmaps4rails'
@@ -69,3 +71,7 @@ end
 
 
 gem 'mocha', group: :test
+
+group :production do
+        gem 'pg'
+end

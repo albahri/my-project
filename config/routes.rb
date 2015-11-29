@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   get 'pages/youtube', as: 'youtube'
   get 'pages/twitter', as: 'twitter'
 
-match '/auth/:provider/callback' => 'sessions#create', via: :get
+# match '/auth/:provider/callback' => 'sessions#create', via: :get
 # match '/signout' => 'sessions#destroy', :as => "signout"
 
   resources :authentications
@@ -24,5 +24,10 @@ match '/auth/:provider/callback' => 'sessions#create', via: :get
   
   # resources :users
   # resources :sessions
+
+match '/auth/:provider/callback' => 'authentications#create', via: :get
+
+
+  
 end
 
