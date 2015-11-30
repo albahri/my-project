@@ -2,24 +2,32 @@
 <script src="//google-maps-utility-library-v3.googlecode.com/svn/tags/markerclustererplus/2.0.14/src/markerclusterer_packed.js"></script>
 <script src='//google-maps-utility-library-v3.googlecode.com/svn/tags/infobox/1.1.9/src/infobox_packed.js' type='text/javascript'></script> <!-- only if you need custom infoboxes -->
 
+
+<form class="form-style-9">
+<div>
 <p id="notice"><%= notice %></p>
 
-<p>
+<ul>
+  <div class="field-style field-split align-left" type="text" name="field1"  placeholder="Name" >
+  
   <strong>Address:</strong>
   <%= @location.address ? @location.address : " "%>
-</p>
-<p>
-	 <strong>Latitude:</strong>
+
+  </div>
+  <div class="field-style" name="field5" >
+   
+  <strong>Latitude:</strong>
   <%= @location.latitude ? @location.latitude : "No Latitude"%>
-
-</p>
-<p>
- <strong>Longitude:</strong>
+  </div>
+   <div class="field-style" name="field6" >
+   
+  <strong>Latitude:</strong>
+  <strong>Longitude:</strong>
   <%= @location.longitude ? @location.longitude : "No Longitude"%>
-</p>
+  </div>
+ 
+  </ul>
 
-<%= link_to 'Edit', edit_location_path(@location) %> |
-<%= link_to 'Back', locations_path %>
 
 <div style='width: 800px;'>
   
@@ -28,3 +36,7 @@
 
 &key=AIzaSyDJvPRbTHpEn-KfeKLlOuSPvX_cjDCDWxg") %>
 </div>
+<%= link_to 'Edit', edit_location_path(@location) %> |
+<%= link_to 'Back', locations_path %>
+</div>
+  </form>

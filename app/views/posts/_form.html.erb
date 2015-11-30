@@ -10,16 +10,23 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
+<form class="form-style-9">
+<ul>
+  <div class="field-style field-split align-left" type="text" name="field1"  placeholder="Name" >
+    <%= f.label :title %>
+    <%= f.text_field :title %></br>
   </div>
-  <div class="field">
-    <%= f.label :description %><br>
+  <div class="field-style" name="field5" placeholder="Message">
+    <%= f.label :description %>
     <%= f.text_area :description %>
   </div>
-  <div class="actions">
+  <div class="actions" type="submit" />
     <%= f.submit %>
   </div>
+  </ul>
+  </form>
 <% end %>
+
+
+
+

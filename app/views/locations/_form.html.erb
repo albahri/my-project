@@ -10,8 +10,9 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
+<form class="form-style-9">
+<ul>
+  <div class="field" >
     <%= f.label :address %><br>
     <%= f.text_field :address %>
   </div>
@@ -24,10 +25,9 @@
     <%= f.hidden_field :longitude %>
   </div>
 
-
-
-
   <div class="actions">
     <%= f.submit %>
   </div>
+  </ul>
+  </form>
 <% end %>

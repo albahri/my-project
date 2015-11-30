@@ -1,14 +1,22 @@
+<form class="form-style-9">
 <p id="notice"><%= notice %></p>
-
-<p>
+<ul>
+  <div class="field-style field-split align-left" type="text" name="field1"  placeholder="Name" >
   <strong>Title:</strong>
   <%= @post.title %>
-</p>
-
-<p>
+  </div>
+  <div class="field-style" name="field5" placeholder="Message">
+   
   <strong>Description:</strong>
   <%= @post.description %>
-</p>
-
-<%= link_to 'Edit', edit_post_path(@post) %> |
+  </div>
+ 
+  </ul>
+ <%= link_to 'Edit', edit_post_path(@post) %> |
 <%= link_to 'Back', posts_path %>
+  </form>
+
+
+
+
+
